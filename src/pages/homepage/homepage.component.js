@@ -5,10 +5,8 @@ import React from 'react';
 const HomePage = () => {
 
     return(
-        <div>
-
+        <div className="homepage-component">
             <p>this is home page component</p>
-
         </div>
     )
 
