@@ -6,9 +6,9 @@ import {Route} from 'react-router-dom'
 function App(){
   return (
     <div id="app-component">
-      <Route path="/" component={HomePage} />
+      <Route exact path="/" component={HomePage} />
       <Route path="/cart" component={CartPage} />
-      <Route path="/signin" component={CartPage} />
+      <Route path="/signin" component={SignInPage} />
     </div>
   );
 }
