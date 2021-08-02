@@ -1,15 +1,31 @@
 import React from 'react'
 
-const Directory = () => {
+//maintain state in react component
+class Directory extends React.Component {
 
-    return(
+    constructor(){
 
-        <div className="directory-component">
-this is directory component
-        </div>
+        super();
+        this.state = {
+            
+            categories: [
+                "electronics","groceries","mobiles"
+            ]
+        }
+    }
 
-    )
 
+    
+  render() {
+      
+    return (
+      <div className="directory-component">
+          {
+              this.state.categories.map((category)=> <p>{category}</p>)
+          }
+      </div>
+    );
+  }
 }
 
 export default Directory;
